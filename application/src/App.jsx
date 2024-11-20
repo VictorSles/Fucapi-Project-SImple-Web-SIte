@@ -2,6 +2,10 @@ import './App.css'
 import { Outlet } from 'react-router-dom'
 {/* Import das imagens */ }
 import img1 from './assets/images/1.webp'
+{/* Imports adicionais do bootstrap pra ajustar algumas coisinhas */ }
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 function App() {
   return (
     <>
@@ -21,7 +25,7 @@ function App() {
           <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="/">Início</a>
+                <a class="nav-link" href="/home">Início</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/sobre-nos">Sobre Nós</a>
@@ -44,6 +48,9 @@ function App() {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
       </>
+      <div class="alert alert-primary" role="alert">
+        Clique nas opções de navegações acima
+      </div>
     </>
   )
 }
