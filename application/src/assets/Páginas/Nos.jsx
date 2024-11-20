@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Nos = () => {
   return (
     <div id="carouselExampleIndicators" class="carousel slide">
